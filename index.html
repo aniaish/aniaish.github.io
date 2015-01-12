@@ -1,84 +1,15 @@
 <!DOCTYPE html>
-<!--
-+++++++++++++++++++++++++++++++++++////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++/////////////////////////////////////////////////////////////////////////////////////////////////                                   ////////////++++++++++++++++++++++++++++++++++
-+++++++++++++++++++////////////////////////////////////////////////////////////////////////////////////////////////////  *******************************  //////////////++++++++++++++++++++++++++++++++
-+++++++++++++++////////////////////////////////////////////////////////////////////////////////////////////////////////  ** Hacked together with Love **  /////////////////+++++++++++++++++++++++++++++
-+++++++++++++//////////////////////////////////////////////////////////////////////////////////////////////////////////  **       For Rasamalai       **  ///////////////////+++++++++++++++++++++++++++
-+++++++++++////////////////////////////////////////////////////////////////////////////////////////////////////////////  **            by             **  /////////////////////+++++++++++++++++++++++++
-++++++++///////////////////////////////////////////////////////////////////////////////////////////////////////////////  **    http://goo.gl/sZvUZM   **  ///////////////////////+++++++++++++++++++++++
-++++++/////////////////////////////////////////////////////////////////////////////////////////////////////////////////  *******************************  /////////////////////////+++++++++++++++++++++
-+++//////////////////////////////////////////////////////////////////////////::::::::::::::::::::::::::::::::://///////                                   //////////////////////////++++++++++++++++++++
-++//////////////////////////////////////////////////////////////////////:::::::::::::::::::::::::::::::::::::::::::://////////////////////////////////////////////////////////////////++++++++++++++++++
-////////////////////////////////////////////////////////////////////::::::::::::::::::::::::::::::::::::::::::::::::::::////////////////////////////////////////////////////////////////++++++++++++++++
-////////////////////////////////////////////////////////////////::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://///////////////////////////////////////////////////////////++++++++++++++
-////////////////////////////////////////////////////////////::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::///////////////////////////////////////////////////////////+++++++++++++
-///////////////////////////////////////////////////////::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::////////////////////////////////////////////////////////+++++++++++
-////////////////////////////////////////////////////::::::::::::::::::::::///:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://///////////////////////////////////////////////////++++++++++
-/////////////////////////////////////////////////::::::::::::::::::::::+shmmmds++//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::///////////////////////////////////////////////////+++++++++
-//////////////////////////////////////////////::::::::::::::::::::::/symmNNNNNmddhhhyo/:::::::::::::::::::::::::::::::::::::::::::::::::::::::///////////////////////////////////////////////////+++++++
-///////////////////////////////////////////:::::::::::::::::::::::/shmNNNNNNNdmmNmNNNNmyo/:::::::::::::::::::::::::::::::::::::::::::::::::::::://////////////////////////////////////////////////++++++
-////////////////////////////////////////::::::::::::::::::::::::/sydNmmNmddmNdddmNNNmmddddy+:::::::::::::::::::::::::::::::::::::::::::::::::::::://////////////////////////////////////////////////++++
-//////////////////////////////////////::::::::::::::::::::::::/oyyhdddhdddhdmhhhdmmNmmmmmNmmy+:::::::::::::::::::::::::::::::::::::::::::::::::::::::////////////////////////////////////////////////+++
-//////////////////////////////////////:::::::::::::::::::::::+hhhhdmdhdhhhhdddddmmmNNNNNNNNNmdho:::::::::::::::::::::::::::::::::::::::::::::::::::::::://////////////////////////////////////////////++
-//////////////////////////////////::::::::::::::::::::::::::ohhhdddmhdmdhdhdmhdmmNNNNNNNNNNNNmmmhs/:::::::::::::::::::::::::::::::::::::::::::::::::::::://///////////////////////////////////////////++
-////////////////////////////////::::::::::::::::::::::::::/sddddhddhhdhhydmmddmmmNNNNNNNNNNNNNNNmNh::::::::::::::::::::::::::::::::::::::::::::::::::::::::////////////////////////////////////////////+
-///////////////////////////////::::::::::://////::::::::::hmmmdddmdhddhddmNNNmmmNNNNmddmNNNNNNNNNNm/::::::::::::::::::::::::::::::::::::::::::::::::::::::::////////////////////////////////////////////
-/////////////////////////////::::::::/+oyhddddddhyso//:::+ddhdddhhhdddmmmmmNNNNNNNNmyhhhhhNNNNNNNNNo:::::::::::::::::::::::::::::::::::::::::::::::::::::::::://////////////////////////////////////////
-////////////////////////////:::::///oydmmmmNNNNNNNNNmdhso+hhdmmmhdddddddmNNNNNNNNNNdmmdyssydmNNNNNNd::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://///////////////////////////////////////
-////////////////////////////:/:///osyhddmmNNNNNNNNNNNNNNNmmdmmmdddhddhhhhdmNNNNNNNmmddmmhsohddmNNNNNh::::::::::///++::::::::::::::::::::::::::::::::::::::::::::////////////////////////////////////////
-//////////////////////////:::///oyyhhhhdmmmNNNNNNNNNNNNNNNNNNNNNmdhhyyyhhdmmmmmmmmmdyyhmy+/yhyhdNNNNNs:::::/oydmmmmds::::::::::::::::::::::::::::::::::::::::::::///////////////////////////////////////
-////////////////////////:::///+ydddhhhhdddmmNNNNNNNNNNNNNNmNNMMNmmddhhyyyyyyhdhydddho+sh+/+ddhhhddmmmmo:+sdmNNNmmmmNN+:::::::::::::::::::::::::::::::::::::::::::://////////////////////////////////////
-///////////////////////:::///odmmddhhhhddmmNNNNNNNNNNNNNNmmNNNNMNNmmdyoooosyhs++shdmhsso++yddhhhhdddddddNNNNmmmmmNNNNs::::::::::::::::::::::::::::::::::::::::::::://///////////////////////////////////
-///////////////////////:////omNmmddhhhhddmmmNNNNNNNNNNNmmmNmmNNNMNmho+++oysyh++++shdddhyyhddhhhhhddddmNMNmmmmmmmNMNNNy::::::::::::::::::::::::::::::::::::::::::::::////////////////////////////////////
-//////////////////////::/:/odNmmmddhhhhdmmNNNNNNNNNNNNNNNmmmmmmNMNNdyssydmmhy/++oosyhhhdhhhhhhhhhddNNMNmmmmmdmNNNNNNNh+//::::::::::::::::::::::::::::::::::::::::::::///////////////////////////////////
-/////////////////////:::///omNNmmmmdhhdddmmNNNNNNNNNNNNNNNNmmmmmNNNNNNmNNNmso/+oossyyhhdmmmddhdddNMMNmmmmmdmmmdddmmNNNNNm+:::::::::::::::::::::::::::::::::::::::::::///////////////////////////////////
-/////////////////////::////omNmNNmmddhhhdmNNNMMMMMMMMMNNNNNmmmmmmomNNmmmmNhs//+syyyyhddmmmmmmmmNMMMNmmmmddmmdddddmmmmmmmmdyo/::::::::::::::::::::::::::::::::::::::::://////////////////////////////////
-////////////////////://///+yNmmNNNmmmmddmNNNNMMMMMMMMMMNNmmmmmmNN//oydmmmmmdsshdddhddmmmmmmNNNMMMMNmmmdddddddddmmmmNNNNNNNmmdy/:::::::::::::::::::::::::::::::::::::::://///////////////////////////////
-/////////////////////////+odmmNNNNNmmNNNmNmmNNNNNMNMMMNmmmmmmmNNm/:::/yNNNNNNNNNNNmNmNNNMMMMMMMNNmmdddddddddmmmmmmmNNNNNNmmNNNms/::::::::::::::::::::::::::::::::::::://////////////////////////////////
-/////////////////////////++hNNNNNNNNNNNNNNmmmNNmmNNNNNmmdddddmNNs:::::/mNNNNMMMMNNNNNNMMMMMMMNmdddddddmmddmmmmmmmmmNNNNmmNNNNNNNd/::::::::::::::::::::::::::::::::::::://///////////////////////////////
-/////////////////////////+odNNNNNNNNMMNMNNmmdmddddmNNNmddddddddmd+:::::omNNmmNNNmNNNNNMMMMMNmdddddddmNmdmmmmmmmmmmmmNNNNNNNNNNNNNm+:::::::::::::::::::::::::::::::::::://///////////////////////////////
-////////////////////////+osdmmNNNNNNNNNNMNNNmmmmdmmNNmmddddddddmmdo:::::+ys//+/+dNNNNNNMMNmddddddmmmNmdmmmmmmmmmmmmmNNNNNNNNMNNNNNm+:::::::::::::::::::::::::::::::::://////////////////////////////////
-////////////////////////+oymmmmmmmNNNNNNNNNNNNNmmmmmmmdddddddmmNmmd:::::::::::::yNNNmNNNNdddddddmmmNmmmmmmdmmmmmmmmNNNNNNNNNNNNMNNNm/::::::::::::::::::::::::::::::::://////////////////////////////////
-///////////////////////+shdmmmmmmmmmmmmNNNNmNNNmmmmmmmmddddmNNNmss+::::::::::::::smNNNmmdddddddmNmNmmmmmddmmmmmmmmmNNNNNNNNNNNMMMNNNd/:::::::::::::::::::::::::::::::///////////////////////////////////
-/////////////////////+ooyhhdmNNNmmdddddmmmmmmNNmmmmNNmmmmmmNNNms::::::::::::::::::+mmmmmNNNNNNNNmNmmmmddmmmmmmmmmmmNNNNNNNNNNMMMMNNNNh/::::::::::::::::::::::::::::::///////////////////////////////////
-/////////////////////o+sosyhmmmmddmddmmNNmNmmNNmmmmmNNNNNNNNNmd/:::::::::::::::::+dNNMMMMMMNNNmmNNmmmdmmmmmmmmmmmmmmNNNNNNNMMMMMNNNNNNy:::::::::::::::::::::::::::::////////////////////////////////////
-/////////////////////oooooymmmmdmmmNNNMMMMMMMMMNNNNmmmNNNNNmNNm+::::::::::::::::+mMMMMMNNmmmNmmmNmmmmmmmmmmmmmmNNNNNNNNNNNMMMMMNNNNNNNNo::::::::::::::::::::::::::://///////////////////////////////////
-/////////////////////oossoommmmmNMMMMMMMMMMMMMMMMMNNmmmmNNmmmm+::::::::::::::::+mMMMMMNmmddNmmmNNmdddmmmdyyhdmmNNNNNNNNNNNMMMMMNNNNNNNNm/::::::::::::::::::::::::://////////////////////////////////////
-/////////////////////oys///dmNNMMMNNNNNNNNNNNmmmmmNNNNNNNmmmmm+:::::::::::::::oNMMMMMNmdddNNmmNMmmmmmmmds/+sdhmNNNNNNNNNNMNMMMMNNNMNMNNNh::::::::::::::::::::::::://////////////////////////////////////
-////////////////////+s/++//yNMNNmmmmmmmmmmmmmmmmmmmmmmmNNNmNNNho:::::::::::::oNMMMMMNmmddNNmmNMMmmmmmmmhosydhmmNNNNNNNNNNMMMMMMMNNMNMNNNN+:::::::::::::::::::::::///////////////////////////////////////
-////////////////////s+/////+NmmddmmmmmmmmmmNNNNNNNNNNNNNNNNNMMMNho//::::::::/mMMMMNmmmmmmNmmmNNmmmmmmmmmmmddmmmNNNNNNNNNNMMMMMMMNMNMMNMMNy::::::::::::::::::::://///////////////////////////////////////
-////////////////////o+//////yddmmmmmmmmmmNNNNNNNNNNNNNNNNNMNNMMMNNNmho/:::::oMMMMNmmmmmNNmmmNMNmmmmmmmmmmmmmmmNNNNNNNNNNMMMMMMMMMMMMMMMMNN/::::::::::::::::::://////////////////////////////////////////
-/////////////////////+//////ddmmmmmmmmmNNNNNNNNNmmNNNNNNNNMMNMNMMMMNNNmyso/:yMMMNmmmmmmNNmNNNMmmmmmmmmmmmmmmmNNNNNNNNNNNMMMMMMMMMMMMMMMMNNs::::::::::::::::::///////////////////////////////////////////
-///////////////////////////odmmmmmmmmmNNNNNNNNmmmNNNNNNNNNMMMMNNMMMMMMMNNNmyhMMMmmmmmmmmmmmNNmmmmmmmmmmmmmmmNNNNNNNNNNNMMMMMMMMMMMMMMMMMMNd:::::::::::::::::///////////////////////////////////////////+
-///////////////////////////dmmmmmmmmmNNNNNNNmmmNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMNmmmmmmmmmmNNNmmmmmmmmmmmmmmmNNNNNNNNNNMMMMMMMMMMMMMMMMMMMNN+:::::::::::::::///////////////////////////////////////////+/
-//////////////////////////odmmmmmmmmNNNNNNmmmmNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMNmmmmmmmmmmmNNmmmmmmmmmmmmmmmNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMNNs:::::::::::::////////////////////////////////////////////+++
-//////////////////////////hmmmmmmmmNNNNNNmmmmNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMNNmmmmmmmmmNNmmmmmmmmmmmmmmNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMNd:::::::::::://////////////////////////////////////////++++++
-/////////////////////////ommmmmmmmNNNNNNmmmmNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMhmMMNNNmmmmmNNNmmmmmmmmmmmmmmmNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMNNN/:::::::://///////////////////////////////////////::/+++++//
-/////////////////////////hmmmmmmmNNNNNmmmmmNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMNMNmmmmNNNmmmmmmmmmmmmmmNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMN+:::::://////////////////////////////::---....-:+///+o++//::
-////+/++++++++///////////dmmmmmmNNNNNmmmmNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmmNNNmmmmmmmmmmmmmmNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMNs::////////////////////+/////////////:.....```.:+++ooo++++::
-::/oyysyyysyysoo/++oooooymmmmNmmNNNmmmmmNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmNNNmmmmmmmmmmmmmmmNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMNh////////////////////+oso+//////+++//:-..-.`...:+ooooo+++o++
-::/shhhhhyyyyyyysoosyyyhmmmmmNmNNNmmmmNNNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNmmmmmmmmmmmmmmmNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd++++++++++++++++++++syhyo//+oo++++++/:---....-/ossoooo++oo+
-:::oyyyhyysyyyyyyyyssydmmmmNmNmNNNNmmNNNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMNNNMMMMMMMMMMMMNNNNmmmmmmmmmmmmmNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm++++ooo++++oooo++++osyhyo++ossoooooo+/:--...--/ossssso++++/
-yoosyyyyysssyyyyyhyyydmmmmmNmNmNNNNmNNNNNNNNNNNNNNNMMMMMMMNNNNMMMMMMMMMMMMMMMMMMMMMMMNNNmmmmNNNNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN++++++++++++o+++++osyyhhysosyysssssso/::--..--/+sssssso++o+
-ddhyyyyyyo/+osysssyysdmmmmNNmNmNNNNNNNNNNNNNmmNNNMMMMMMMNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMNmmmmmmNNNNNNNmNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo++++o++++++oo++++osyyysssoossoooooss+/::---::/osyyyyysooo+
-mdhyyyyys/--/ooooossodmmmmNNmNNmNMNNNNNNNNNmmNNNMMMMMMNNNNNNNMMMMMMMMMMMMMMMMMMNNNNNNNNmmmmmmNNNNNNmmNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs+++++++++++oo++osyhhyoo+++++++++++ooo+///+ooosyyyyyyyysso+
-dhyyyhhhy/-:+oo++ossohmmmNNNmNNNNMNNNNNNNNmmNNMMMMNNNNNNNNNMMMMMMMMMMMMMMMMMNNNNmmMNmNmmmmmNNNNNNNNmmNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy+++ooo+++++ooosyhhddhyso++++++++ooooo+++sssyssyyyyhyyysooo
--->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Niketh and Pavi</title>
-<script type="text/javascript" src="./res/jquery-accord.js"></script>
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-<link rel="stylesheet" href="./js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
-<link href="./res/media-queries.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="./res/style-light.css">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+<html class=""><head><style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}</style><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><link href="Ani%20and%20Aish_files/css.css" rel="stylesheet" type="text/css"><style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ani and Aish</title>
+<script style="" type="text/javascript" src="Ani%20and%20Aish_files/jquery-accord.js"></script>
+<script src="Ani%20and%20Aish_files/jquery-1.js"></script>
+<script src="Ani%20and%20Aish_files/jquery-ui.js"></script>
+<script src="Ani%20and%20Aish_files/js.txt"></script><script src="Ani%20and%20Aish_files/main_002.js"></script><script src="Ani%20and%20Aish_files/main.js"></script>
+<link rel="stylesheet" href="Ani%20and%20Aish_files/jquery.css" type="text/css" media="screen">
+<script type="text/javascript" src="Ani%20and%20Aish_files/jquery.js"></script>
+<link href="Ani%20and%20Aish_files/media-queries.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="Ani%20and%20Aish_files/style-light.css">
+<link rel="stylesheet" type="text/css" href="Ani%20and%20Aish_files/css_002.css">
 <style type="text/css">
 #map {
  	width:400px;
@@ -654,7 +585,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 var CDown = function() {
 	this.state=0;// if initialized
-	this.counts=[];// array holding countdown date objects and id to print to {d:new Date(2013,11,18,18,54,36), id:"countbox"}
+	this.counts=[];// array holding countdown date objects and id to print to {d:new Date(2013,01,12,18,54,36), id:"countbox"}
 	this.interval=null;// setInterval object
 }
 
@@ -739,49 +670,49 @@ CDown.prototype = {
 window.onload=function(){
 	var cdown = new CDown();
 
-	cdown.add(new Date(2015,0,21,12,59,59), "countbox");
+	cdown.add(new Date(2015,0,25,12,59,59), "countbox");
 };
 </script>
 <style type="text/css"></style>
 
 
-</head>
-<body>
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style><script src="Ani%20and%20Aish_files/common.js" charset="UTF-8" type="text/javascript"></script><script src="Ani%20and%20Aish_files/map.js" charset="UTF-8" type="text/javascript"></script><script src="Ani%20and%20Aish_files/util.js" charset="UTF-8" type="text/javascript"></script><script src="Ani%20and%20Aish_files/geometry.js" charset="UTF-8" type="text/javascript"></script><script src="Ani%20and%20Aish_files/directions.js" charset="UTF-8" type="text/javascript"></script><script src="Ani%20and%20Aish_files/marker.js" charset="UTF-8" type="text/javascript"></script><script src="Ani%20and%20Aish_files/stats.js" charset="UTF-8" type="text/javascript"></script><script src="Ani%20and%20Aish_files/onion.js" charset="UTF-8" type="text/javascript"></script><script src="Ani%20and%20Aish_files/infowindow.js" charset="UTF-8" type="text/javascript"></script><script src="Ani%20and%20Aish_files/controls.js" charset="UTF-8" type="text/javascript"></script><style type="text/css">.fancybox-margin{margin-right:17px;}</style><script src="Ani%20and%20Aish_files/common_002.js" charset="UTF-8" type="text/javascript"></script><script src="Ani%20and%20Aish_files/map_002.js" charset="UTF-8" type="text/javascript"></script><script src="Ani%20and%20Aish_files/util_002.js" charset="UTF-8" type="text/javascript"></script><script src="Ani%20and%20Aish_files/geometry_002.js" charset="UTF-8" type="text/javascript"></script><script src="Ani%20and%20Aish_files/directions_002.js" charset="UTF-8" type="text/javascript"></script><script src="Ani%20and%20Aish_files/marker_002.js" charset="UTF-8" type="text/javascript"></script><script src="Ani%20and%20Aish_files/stats_002.js" charset="UTF-8" type="text/javascript"></script></head>
 <body link="#71380F">
-        <div id="landimg">
+
+        <div style="display: none;" id="landimg">
 <div id="landimgfg">
                             <div id="lbutton">
             
-            <a href="#accordion" class="btn btn-dark btn-lg" style="text-decoration:none;" id="buttid">Join us on our journey...  &#10149;</a>
+            <a href="#accordion" class="btn btn-dark btn-lg" style="text-decoration:none;" id="buttid">Join us on our journey...  ➥</a>
             </div>
         </div>        </div>
-<div id="mpage"  style="display:none">
-    <img id="nc" src="./res/nct.png" >  <img id="pc" src="./res/pct.png">
-    <p id="intro"> We were too happy and bored living alone, that we decided to add more spice and anger to our lives by tying the knot on <b>Friday, the 23rd of January, 2015.</b> <br><br>You are cordially invited to attend the event.<br><br>-Sriniketh and Pavithra <br></p>
-<div id="countbox"> </div>
+<div id="mpage" style="">
+      
+    <p id="intro">Come out.. Come out wherever u are!!<br><b>On Sunday & Monday, <br>the 25th & 26th of January, 2015.</b> <br><br>The only thing which we still need is you ..... :) The pleasure of your company is requested !!!<br><br>- Ani &amp; Aish<br></p>
+<div id="countbox">11 days, 16 hours, 38 mins, 50 secs to go!</div>
 <div id="pagewrap">
-<div id="accordion">
+<div role="tablist" class="ui-accordion ui-widget ui-helper-reset" id="accordion">
 
-<h2 id="top">Events </h2>
+<h2 tabindex="0" aria-selected="false" aria-controls="ui-accordion-accordion-panel-0" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all" id="top"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Events </h2>
 
-<div class="section">
+<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="top" id="ui-accordion-accordion-panel-0" style="display: none; border-bottom-width: 0px; border-top-width: 0px; padding-bottom: 0px; padding-top: 0px; height: 571px;" class="section ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
 <h3>
 <div class="mytextbox">
 <br><br>
-<a class="fancybox" rel="eventslist" title="<center><em><ins>Vratham on Jan 22 at 9am</em></ins></center><br>This event is performed separately by the bride and the groom. A holy thread is tied to the bride's hand symbolizing a protective armour from evil spirits. For the groom, vratham symbolizes that the days of his bachelor life are now over. He prepares for a new chapter as a householder." href="./res/vratham.jpg">Vratham on Jan 22 at 9am</a><br><br>
-<a class="fancybox" rel="eventslist" title="<center><em><ins>Nichayathartham on Jan 22 at 6pm</em></ins></center><br>The bride's family and the groom's family solemnise the final betrothal ceremony. The vedic priests chant the relevant hymns, including the names of the bride, the groom along with the names of three generations of ancestors." href="./res/nichayam.jpg">Nichayathartham on Jan 22 at 6pm</a><br><br>
-<a class="fancybox" rel="eventslist" title="<center><em><ins>Kaasi Yaathrai on Jan 23 at 7am</em></ins> </center><br>This is a very important part of the ceremony. After his student life, the bachelor starts on his way to Kasi(Varanasi) to take up sanyasam. On his way, the bride's father intervenes and advises him of the superiority of married life to ascetic life. He also promises to give his daughter as a companion to face the challenges of life and the groom agrees to marry his cute daughter" href="./res/muhurtham.jpg">Kaasi Yaathrai on Jan 23 at 7am</a><br><br>
-<a class="fancybox" rel="eventslist" title="<center><em><ins>Exchange of garlands and Oonjal on Jan 23 at 7:30am</em></ins></center><br>A garland worn by a person, should not be used by another, according to the shastras. The bride and the groom exchange garlands symbolizing their unification as a single source. The couple are then seated on a swing (Oonjal). They rock back and forth, as songs are sung praising the couple. Coloured globules of cooked rice are waved in circular motion and thrown away to propitiate the evil spirits. The to and fro motion represents the undulating sea waves of life. Yet in mind and body, they shall move in harmony." href="./res/oonjal.jpg">Exchange of garlands and Oonjal on Jan 23 at 7:30am</a><br><br>
-<a class="fancybox" rel="eventslist" title="<center><em><ins>Maangalya Dharanam on Jan 23 at 9am</em></ins></center><br>Timed to the exact auspicious hour, the bridegroom ties the gold Maanglaya Sutra around the neck of the bride. Nadaswaram and drums are played loud and fast in order to muffle any other inauspicious sounds at the critical moment. Three knots are tied. The first one by the bridegroom, the other two by his sister to make the bride as part of the groom's family." href="./res/mangalya.jpg">Maanglaya Dharanam on Jan 23 at 9am</a><br><br>
-<a class="fancybox" rel="eventslist" title="<center><em><ins>Nalangu on Jan 23 at 3pm</em></ins></center><br>The bride and the groom play games, that are rigged to let the bride win. The event brings out many qualities in the bride and the groom for better understanding and compatibility." href="./res/nalangu.jpg">Nalangu on Jan 23 at 3pm</a><br><br>
-<a class="fancybox" rel="eventslist" title="<center><em><ins>Reception on Jan 23 at 6:30pm</em></ins></center><br>This is an informal get-together of family and friends, celebrating the beginning of a great journey for the newly weds." href="./res/recep.jpg">Reception on Jan 23 at 6:30pm</a><br><br>
+<a title="&lt;center&gt;&lt;em&gt;&lt;ins&gt;Vratham on Jan 26 at 9am&lt;/em&gt;&lt;/ins&gt;&lt;/center&gt;&lt;br&gt;This event is performed separately by the bride and the groom. A holy thread is tied to the bride's hand symbolizing a protective armour from evil spirits. For the groom, vratham symbolizes that the days of his bachelor life are now over. He prepares for a new chapter as a householder." class="fancybox" rel="eventslist" href="http://aniaish.github.io/res/vratham.jpg">Vratham on Jan 25 at 9am</a><br><br>
+<a class="fancybox" rel="eventslist" title="&lt;center&gt;&lt;em&gt;&lt;ins&gt;Nichayathartham on Jan 25 at 2.30pm&lt;/em&gt;&lt;/ins&gt;&lt;/center&gt;&lt;br&gt;The bride's family and the groom's family solemnise the final betrothal ceremony. The vedic priests chant the relevant hymns, including the names of the bride, the groom along with the names of three generations of ancestors." href="http://aniaish.github.io/res/nichayam.jpg">Nichayathartham on Jan 25 at 6pm</a><br><br>
+<a class="fancybox" rel="eventslist" title="&lt;center&gt;&lt;em&gt;&lt;ins&gt;Reception on Jan 25 at 6:30pm&lt;/em&gt;&lt;/ins&gt;&lt;/center&gt;&lt;br&gt;This is an informal get-together of family and friends, celebrating the beginning of a great journey for the newly weds." href="http://aniaish.github.io/res/recep.jpg">Reception on Jan 25 at 6:30pm</a><br><br>
+<a class="fancybox" rel="eventslist" title="&lt;center&gt;&lt;em&gt;&lt;ins&gt;Kaasi Yaathrai on Jan 26 at 7am&lt;/em&gt;&lt;/ins&gt; &lt;/center&gt;&lt;br&gt;This is a very important part of the ceremony. After his student life, the bachelor starts on his way to Kasi(Varanasi) to take up sanyasam. On his way, the bride's father intervenes and advises him of the superiority of married life to ascetic life. He also promises to give his daughter as a companion to face the challenges of life and the groom agrees to marry his cute daughter" href="http://aniaish.github.io/res/muhurtham.jpg">Kaasi Yaathrai on Jan 26 at 7am</a><br><br>
+<a class="fancybox" rel="eventslist" title="&lt;center&gt;&lt;em&gt;&lt;ins&gt;Exchange of garlands and Oonjal on Jan 26 at 7:30am&lt;/em&gt;&lt;/ins&gt;&lt;/center&gt;&lt;br&gt;A garland worn by a person, should not be used by another, according to the shastras. The bride and the groom exchange garlands symbolizing their unification as a single source. The couple are then seated on a swing (Oonjal). They rock back and forth, as songs are sung praising the couple. Coloured globules of cooked rice are waved in circular motion and thrown away to propitiate the evil spirits. The to and fro motion represents the undulating sea waves of life. Yet in mind and body, they shall move in harmony." href="http://aniaish.github.io/res/oonjal.jpg">Exchange of garlands and Oonjal on Jan 26 at 7:30am</a><br><br>
+<a class="fancybox" rel="eventslist" title="&lt;center&gt;&lt;em&gt;&lt;ins&gt;Maangalya Dharanam on Jan 26 at 9am&lt;/em&gt;&lt;/ins&gt;&lt;/center&gt;&lt;br&gt;Timed to the exact auspicious hour, the bridegroom ties the gold Maanglaya Sutra around the neck of the bride. Nadaswaram and drums are played loud and fast in order to muffle any other inauspicious sounds at the critical moment. Three knots are tied. The first one by the bridegroom, the other two by his sister to make the bride as part of the groom's family." href="http://aniaish.github.io/res/mangalya.jpg">Maanglaya Dharanam on Jan 26 at 9am</a><br><br>
+<a class="fancybox" rel="eventslist" title="&lt;center&gt;&lt;em&gt;&lt;ins&gt;Nalangu on Jan 26 at 3pm&lt;/em&gt;&lt;/ins&gt;&lt;/center&gt;&lt;br&gt;The bride and the groom play games, that are rigged to let the bride win. The event brings out many qualities in the bride and the groom for better understanding and compatibility." href="http://aniaish.github.io/res/nalangu.jpg">Nalangu on Jan 26 at 3pm</a><br><br>
 
 </div>
 </h3>
 </div>
-<h2 id="venue">Venue</h2>
+<h2 tabindex="-1" aria-selected="false" aria-controls="ui-accordion-accordion-panel-1" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" id="venue"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Venue</h2>
 
-<div class="section">
+<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="venue" id="ui-accordion-accordion-panel-1" style="display: none;" class="section ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
 
 <div id="mapbgholder">
 
@@ -789,108 +720,77 @@ window.onload=function(){
 <br><br>
 <div id="venueaddr">
 <b>Jot down the address : </b><br>
-Hare Krishna Movement,<br>
-63, 1st Sea Ward Road, Valmiki Nagar, Thiruvanmiyur,<br>
-Chennai - 600041, <br>
+Srimathi Alamelu Kalyana Mahal,<br>
+5, Sankaran Pillai Street, Near S.R.C, <br>
+Trichy - 620002, <br>
 Tamil Nadu, India.<br><br>
 <b>Or, plan your journey ;) </b><br><br>
 </div>
 <form id="calculate-route" name="calculate-route" action="#" method="get">
-      <input type="text" id="from" name="from" required="required" placeholder="Where are you travelling from?" STYLE=" font-size:24px;font-family:'Tangerine', cursive;font-style:oblique;color: #71380F;   background-color: #e4c994;" size="60" maxlength="60" /> <img id="car" src="./res/car.png" height="30" width="30">  <img id="bus" src="./res/bus2.png" height="30" width="30">
+      <input id="from" name="from" required="required" placeholder="Where are you travelling from?" style=" font-size:24px;font-family:'Tangerine', cursive;font-style:oblique;color: #71380F;   background-color: #e4c994;" size="60" maxlength="60" type="text"> <img id="car" src="Ani%20and%20Aish_files/car.png" height="30" width="30">  <img id="bus" src="Ani%20and%20Aish_files/bus2.png" height="30" width="30">
       
-      <input name="to" type="hidden" id="to" 
-               value="Hare Krishna Movement,Chennai, Tamil Nadu 600041, India"/>
+      <input name="to" id="to" value="Srimathi Alamelu Kalyana Mahal,Trichy, Tamil Nadu 620002, India" type="hidden">
 
 	
       
     </form>
 
- <div id="map"></div>
+ <div style="position: relative; background-color: rgb(229, 227, 223); overflow: hidden;" id="map"><div style="overflow: hidden;"></div></div>
 </h4>
 </div>
 
 </div>
- <h2 id="say">Say Something</h2>
+ <h2 tabindex="-1" aria-selected="false" aria-controls="ui-accordion-accordion-panel-2" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" id="say"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Say Something</h2>
 
-<div class="section" >
+<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="say" id="ui-accordion-accordion-panel-2" style="display: none;" class="section ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
 <h5>
 <div class="mytextbox">
 
 <form action="http://getsimpleform.com/messages?form_api_token=ffd0c9fcbb65ebc145f623d62ff0f68c" method="post">
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-   <input type='hidden' name='redirect_to' value='http://nikethpavi.github.io/#accordion' />
+   <input name="redirect_to" value="http://aniaish.github.io/#accordion" type="hidden">
   <!-- all your input fields here.... -->
-You are cordially invited to attend our wedding<br> on 22nd and 23rd of January, 2015 !!<br><br>
+You are cordially invited to attend our wedding<br> on 25th and 26th of January, 2015 !!<br><br>
     <div>
         <label for="name">Your Name :</label>
-        <input type="text" id="name"  name='Name :' STYLE=" font-size:24px;font-family:'Tangerine', cursive;font-style:oblique;color: #71380F;   background-color: #e4c994;width:250px;" size="60" />
+        <input id="name" name="Name :" style=" font-size:24px;font-family:'Tangerine', cursive;font-style:oblique;color: #71380F;   background-color: #e4c994;width:250px;" size="60" type="text">
     </div>
     <div>
         <label for="mail">E-mail id :</label>
-        <input type="email" id="mail"  name='Mail :' STYLE=" font-size:24px;font-family:'Tangerine', cursive;font-style:oblique;color: #71380F;   background-color: #e4c994;width:250px;" placeholder="This will remain private :)" size="60" />
+        <input id="mail" name="Mail :" style=" font-size:24px;font-family:'Tangerine', cursive;font-style:oblique;color: #71380F;   background-color: #e4c994;width:250px;" placeholder="This will remain private :)" size="60" type="email">
     </div>
     <div>
         <label for="rsvp">RSVP : </label>
-          <input type="radio" name="rsvp" value="yes">Yes     <input type="radio" name="rsvp" value="maybe">May Be <input type="radio" name="rsvp" value="no">No 
+          <input name="rsvp" value="yes" type="radio">Yes     <input name="rsvp" value="maybe" type="radio">May Be <input name="rsvp" value="no" type="radio">No 
     </div>
     <div>
         <label for="pmsg">You can leave us a private message here : </label>
-        <textarea id="pmsg"name='private  :' STYLE="font-size:24px;font-family:'Tangerine', cursive;font-style:oblique;color: #71380F;   background-color: #e4c994;width:250px;" size="300"></textarea>
+        <textarea id="pmsg" name="private  :" style="font-size:24px;font-family:'Tangerine', cursive;font-style:oblique;color: #71380F;   background-color: #e4c994;width:250px;" size="300"></textarea>
     </div>
     <div>
         <label for="msg">and/or a public message here : </label>
-        <textarea id="msg"name='public  :' STYLE="font-size:24px;font-family:'Tangerine', cursive;font-style:oblique;color: #71380F;   background-color: #e4c994;width:250px;"  placeholder="This will be published in the guest-book, after moderation ;)"size="300"></textarea>
+        <textarea id="msg" name="public  :" style="font-size:24px;font-family:'Tangerine', cursive;font-style:oblique;color: #71380F;   background-color: #e4c994;width:250px;" placeholder="This will be published in the guest-book, after moderation ;)" size="300"></textarea>
     </div>
     <div>
-        <input type='submit' value='Submit' STYLE=" font-size:24px;font-family:'Tangerine', cursive;font-style:oblique;color: #71380F;   background-color: #e4c994;" />
+        <input value="Submit" style=" font-size:24px;font-family:'Tangerine', cursive;font-style:oblique;color: #71380F;   background-color: #e4c994;" type="submit">
     </div>
 </form>
 </div>
 </h5>
 </div>
- <h2 id="say">Guest-Book</h2>
+ <h2 tabindex="-1" aria-selected="false" aria-controls="ui-accordion-accordion-panel-3" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" id="say"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Guest-Book</h2>
 
-<div class="section" >
+<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="say" id="ui-accordion-accordion-panel-3" style="display: none;" class="section ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
 <div id="commentsbgholder">
 <div class="mytextbox">
 <br><br>
 To leave a message here, fill in the public message dialog in the RSVP form :)
 <br><br>
-<blockquote>
-I am looking forward to that Rasamalai... :P
-<br>
--You Know Who
-    </blockquote>
-<br>
-<blockquote> 
-    Pavi-Niketh, you are so lovely together. You have all the ingredients to make a perfect cocktail of love and cuteness and fun. Wish your relationship (sambandha-mendhi) all the luck to last forever.<br>-Ishan
- </blockquote>  
- <br>  
- <blockquote>
- I know he isn't the kind of guy Akka(Pavithra) has dreamt about but he's the most awesome, most compatible, most perfect guy for her! You guys totally complement each other! Love you guys!<br> -Himaya
- </blockquote> 
- <br>  
- <blockquote>
- Pavi! You and Sri look amazing together. Made for each other types ekdum! I wish you a very happy married life. Have a blast in Chennai!!!<br> -Pratiek
- </blockquote> <br>  
- <blockquote>
- You guys make a wonderful pair... Excited to attend the wedding :)<br> -Gowri
- </blockquote>
- <br>  
- <blockquote>
-  Our blessings for the young couple ! <br> -Shanthi
- </blockquote>
-
-</div>
-</div>
-</div>
-
-</div>
-</div>
 
 </div>
 
   
+
 
 
 
